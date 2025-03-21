@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/d_activity_cadastro_loja"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".D_CadastroLoja">
+
+    <EditText
+        android:id="@+id/Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Idade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/UF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome" />
+
+    <EditText
+        android:id="@+id/UF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="UF"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Cidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Idade" />
+
+    <EditText
+        android:id="@+id/Cidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cidade"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Telefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UF" />
+
+    <EditText
+        android:id="@+id/Telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cidade" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/tituloTamanhoRoupa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Telefone" />
+
+    <TextView
+        android:id="@+id/tituloTamanhoRoupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Tamanho de roupa:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PP"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTamanhoP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botaoTamanhoG" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTamanhoM"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoTamanhoPP"
+        app:layout_constraintTop_toTopOf="@+id/botaoTamanhoG" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTamanhoG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoTamanhoP"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTamanhoRoupa" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTamanhoGG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoTamanhoM"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTamanhoRoupa" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoGG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GG"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTamanhoOutro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoTamanhoG"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTamanhoRoupa" />
+
+    <RadioButton
+        android:id="@+id/botaoTamanhoOutro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoTamanhoGG"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTamanhoRoupa" />
+
+    <TextView
+        android:id="@+id/tituloCoresRoupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cores de roupa de interesse:"
+        app:layout_constraintBottom_toTopOf="@+id/checkboxCorPreto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoTamanhoOutro"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <CheckBox
+        android:id="@+id/checkboxCorPreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Preto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloCoresRoupa" />
+
+    <CheckBox
+        android:id="@+id/checkboxCorBranco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxCorPreto" />
+
+    <CheckBox
+        android:id="@+id/checkboxCorColorido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Colorido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxCorBranco"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cadastrar"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
