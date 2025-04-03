@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="edtTitulo">Title</string>
+    <string name="edtAutor">Author</string>
+    <string name="titEConcluido">The book has been completed:</string>
+    <string name="ckbSim">Yes</string>
+    <string name="ckbNao">No</string>
+    <string name="btnSalvar">Save</string>
+
+    <string-array name="categorias">
+        <item>Fiction</item>
+        <item>Technical</item>
+        <item>Self-help</item>
+    </string-array>
+</resources>
