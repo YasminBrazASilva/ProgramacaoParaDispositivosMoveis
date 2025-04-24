@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Medicines</string>
+
+    <string name="button_register">Register medicine</string>
+
+    <string name="title_register">Medicine registration</string>
+    <string name="edittext_name_hint">Name</string>
+    <string name="edittext_description_hint">Description</string>
+    <string name="edittext_schedule_hint">Schedule</string>
+    <string name="edittext_consumed">Consumed (Yes/No)</string>
+
+</resources>
