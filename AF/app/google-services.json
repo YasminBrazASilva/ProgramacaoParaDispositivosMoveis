@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319745006112",
+    "project_id": "af-pdm-2900f",
+    "storage_bucket": "af-pdm-2900f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319745006112:android:2625cc78ff928e6e717a45",
+        "android_client_info": {
+          "package_name": "com.example.af"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqn_KjasrqHN72JOH8PcBOSeSfcn7hp2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
