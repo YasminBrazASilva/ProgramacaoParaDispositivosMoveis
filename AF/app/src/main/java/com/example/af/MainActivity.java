@@ -67,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void logarUsuario(View v)
     {
-        EditText edtEmail = findViewById(R.id.edtEmail);
-        EditText edtSenha = findViewById(R.id.edtSenha);
-
         mAuth.signInWithEmailAndPassword(edtEmail.getText().toString(), edtSenha.getText().toString())
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {

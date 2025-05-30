@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AF"
         tools:targetApi="31">
         <activity
+            android:name=".DetalhesReceitas"
+            android:exported="false" />
+        <activity
             android:name=".PaginaInicial"
             android:exported="false" />
         <activity
