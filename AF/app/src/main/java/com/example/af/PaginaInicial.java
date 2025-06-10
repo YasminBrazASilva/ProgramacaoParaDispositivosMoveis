@@ -47,6 +47,7 @@ public class PaginaInicial extends AppCompatActivity {
 
         adapter.setOnItemClickListener(receita -> {
             Intent intent = new Intent(PaginaInicial.this, DetalhesReceitas.class);
+
             intent.putExtra("nome", receita.getNome());
             intent.putExtra("ingredientes", new ArrayList<>(receita.getIngredientes()));
             intent.putExtra("passos", new ArrayList<>(receita.getPassos()));
